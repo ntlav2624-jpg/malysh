@@ -258,3 +258,29 @@ if __name__ == "__main__":
         curses.wrapper(main)
     except KeyboardInterrupt:
         print("\nOmega Apex Organism shut down safely. All systems persistent.")
+
+# --- PATCH: XYZT EcoSphere Integration ---
+import random
+from typing import Dict, List
+
+class MalyshEcoNode:
+    def __init__(self, node_id: int, x_glyph: int, y_rhythm: int, z_route: int, t_slot: int):
+        self.id = node_id
+        self.xyzt = (x_glyph, y_rhythm, z_route, t_slot)
+
+    def process_pulse(self, data: str) -> str:
+        glyphs = {0: "Point", 1: "Pyramid", 2: "Cube", 3: "Sphere", 4: "Penta", 
+                  5: "Hexa", 6: "Hepta", 7: "Spiral", 8: "Swarm", 9: "Omega"}
+        g_name = glyphs.get(self.xyzt[0], "Unknown")
+        return f"[Node {self.id} | Glyph: {g_name} | XYZT: {self.xyzt}] Stream: {data}"
+
+class EcoSphereNetwork:
+    def __init__(self, size: int = 1000):
+        self.nodes: Dict[int, MalyshEcoNode] = {}
+        for i in range(size):
+            self.nodes[i] = MalyshEcoNode(i, i % 10, (i // 10) % 10, (i // 100) % 10, i % 10)
+
+    def broadcast_to_glyph(self, packet: str, glyph_id: int) -> List[str]:
+        target_nodes = [n for n in self.nodes.values() if n.xyzt[0] == glyph_id]
+        return [n.process_pulse(packet) for n in target_nodes[:5]]
+# --- END PATCH ---
