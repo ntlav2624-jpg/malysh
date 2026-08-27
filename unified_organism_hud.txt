@@ -1,0 +1,10 @@
+{
+  "tick": 9,
+  "mean_energy": 50.04,
+  "sensors": {
+    "cpu_load": 0.2,
+    "entropy": 57
+  },
+  "supervisor": "ACTIVE",
+  "status": "HEALTHY"
+}

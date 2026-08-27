@@ -1,0 +1,9 @@
+{"tick": 1, "timestamp": "2026-08-27 10:26:28", "sensors": {"cpu_load": 0.2, "entropy": 249}, "energy": 50.007407407407406}
+{"tick": 2, "timestamp": "2026-08-27 10:26:29", "sensors": {"cpu_load": 0.2, "entropy": 26}, "energy": 50.08444444444444}
+{"tick": 3, "timestamp": "2026-08-27 10:26:29", "sensors": {"cpu_load": 0.2, "entropy": 95}, "energy": 50.11525925925926}
+{"tick": 4, "timestamp": "2026-08-27 10:26:30", "sensors": {"cpu_load": 0.2, "entropy": 152}, "energy": 50.12758518518518}
+{"tick": 5, "timestamp": "2026-08-27 10:26:30", "sensors": {"cpu_load": 0.2, "entropy": 175}, "energy": 50.09547851851852}
+{"tick": 6, "timestamp": "2026-08-27 10:26:31", "sensors": {"cpu_load": 0.2, "entropy": 130}, "energy": 50.082635851851855}
+{"tick": 7, "timestamp": "2026-08-27 10:26:31", "sensors": {"cpu_load": 0.2, "entropy": 175}, "energy": 50.07749878518519}
+{"tick": 8, "timestamp": "2026-08-27 10:26:32", "sensors": {"cpu_load": 0.2, "entropy": 184}, "energy": 50.07544395851851}
+{"tick": 9, "timestamp": "2026-08-27 10:26:32", "sensors": {"cpu_load": 0.2, "entropy": 57}, "energy": 50.037584990814814}
